@@ -1,0 +1,26 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "力扣刷题汇总",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node",
+    "check": "tsc",
+    "check:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/li-jia-nan/LeetCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/li-jia-nan/LeetCode/issues"
+  },
+  "homepage": "https://github.com/li-jia-nan/LeetCode#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
