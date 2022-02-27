@@ -3,7 +3,7 @@ export const isValid = (s: string): boolean => {
     return false;
   }
   const stack = [];
-  const map = new Map();
+  const map = new Map<string, string>();
   map.set('(', ')');
   map.set('{', '}');
   map.set('[', ']');

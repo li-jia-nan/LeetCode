@@ -5,7 +5,7 @@ export const minWindow = (s: string, t: string): string => {
   for (let c of t) {
     need.set(c, need.has(c) ? need.get(c) + 1 : 1);
   }
-  let needType = need.size;
+  let needType = need.size + 1;
   let res = '';
   while (r < s.length) {
     const c = s[r];
