@@ -8,7 +8,7 @@ export const mergeSort = (arr: number[]): number[] => {
     const right = arr.slice(mid, arr.length);
     const orderLeft = rec(left);
     const orderRight = rec(right);
-    const res = [];
+    const res: number[] = [];
     while (orderLeft.length || orderRight.length) {
       if (orderLeft.length && orderRight.length) {
         res.push(orderLeft[0] < orderRight[0] ? orderLeft.shift() : orderRight.shift());

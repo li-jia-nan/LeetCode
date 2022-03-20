@@ -11,8 +11,8 @@ class TreeNode {
 }
 
 export const preorderTraversal = (root: TreeNode | null): number[] => {
-  const res = [];
-  const stack = [];
+  const res: number[] = [];
+  const stack: TreeNode[] = [];
   if (root) {
     stack.push(root);
   }

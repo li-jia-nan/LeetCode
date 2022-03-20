@@ -10,7 +10,7 @@ class TreeNode {
   }
 }
 
-export const inorderTraversal = (root: TreeNode | null): number[] => {
+export const findTarget = (root: TreeNode | null, k: number): boolean => {
   const res: number[] = [];
   const rec = (n: TreeNode | null) => {
     if (!n) {
@@ -21,5 +21,12 @@ export const inorderTraversal = (root: TreeNode | null): number[] => {
     rec(n.right);
   };
   rec(root);
-  return res;
+  for (let i = 0; i < res.length; i++) {
+    for (let j = 0; j < res.length; j++) {
+      if (res[i] + res[j] === k && i !== j) {
+        return true;
+      }
+    }
+  }
+  return false;
 };

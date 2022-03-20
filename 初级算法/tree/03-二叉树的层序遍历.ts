@@ -14,7 +14,7 @@ export const levelOrder = (root: TreeNode | null): number[][] => {
   if (!root) {
     return [];
   }
-  const res = [];
+  const res: number[][] = [];
   const queue: [TreeNode | null, number][] = [[root, 0]];
   while (queue.length) {
     const [n, level] = queue.shift();

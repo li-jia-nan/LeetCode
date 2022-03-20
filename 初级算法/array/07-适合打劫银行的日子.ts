@@ -1,6 +1,6 @@
 export const goodDaysToRobBank = (security: number[], time: number): number[] => {
-  const left = [0];
-  const right = [];
+  const left: number[] = [0];
+  const right: number[] = [];
   for (let i = 1; i < security.length; i++) {
     if (security[i] <= security[i - 1]) {
       left[i] = left[i - 1] + 1;
@@ -16,7 +16,7 @@ export const goodDaysToRobBank = (security: number[], time: number): number[] =>
       right[i] = 0;
     }
   }
-  let res = [];
+  const res: number[] = [];
   for (let i = 0; i < security.length; i++) {
     if (left[i] >= time && right[i] >= time) {
       res.push(i);

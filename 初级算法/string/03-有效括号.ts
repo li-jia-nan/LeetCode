@@ -2,7 +2,7 @@ export const isValid = (s: string): boolean => {
   if (s.length % 2 !== 0) {
     return false;
   }
-  const stack = [];
+  const stack: string[] = [];
   const map = new Map<string, string>();
   map.set('(', ')');
   map.set('{', '}');

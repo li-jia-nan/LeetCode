@@ -9,7 +9,7 @@ class Node {
 }
 
 export const postorder = (root: Node | null): number[] => {
-  const res = [];
+  const res: number[] = [];
   const dfs = (r: Node | null) => {
     if (!r) {
       return r;
