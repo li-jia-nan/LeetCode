@@ -1,6 +1,6 @@
 export const permute = (nums: number[]): number[][] => {
   const res: number[][] = [];
-  const backtrack = (path: number[]) => {
+  const backtrack = (path: number[]): void => {
     if (path.length === nums.length) {
       res.push(path);
       return;
