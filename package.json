@@ -2,10 +2,10 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "力扣刷题汇总",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "start": "ts-node",
-    "check": "tsc"
+    "start": "tsc",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
