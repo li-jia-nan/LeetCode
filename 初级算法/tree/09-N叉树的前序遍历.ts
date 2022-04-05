@@ -1,15 +1,16 @@
-class Node {
+// Definition for node.
+class TreeNode {
   val: number;
-  children: Node[];
+  children: TreeNode[];
   constructor(val?: number) {
     this.val = val || 0;
     this.children = [];
   }
 }
 
-export const preorder = (root: Node | null): number[] => {
+export const preorder = (root: TreeNode | null): number[] => {
   const res: number[] = [];
-  const dfs = (r: Node | null): void => {
+  const dfs = (r: TreeNode | null): void => {
     if (!r) {
       return;
     }
