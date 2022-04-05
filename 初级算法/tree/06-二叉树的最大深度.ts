@@ -10,16 +10,18 @@ class TreeNode {
   }
 }
 
-export const inorderTraversal = (root: TreeNode | null): number[] => {
-  const res: number[] = [];
-  const dfs = (r: TreeNode | null): void => {
-    if (!r) {
+export const maxDepth = (root: TreeNode | null): number => {
+  let res = 0;
+  const dfs = (n: TreeNode | null, l: number) => {
+    if (!n) {
       return;
     }
-    dfs(r.left);
-    res.push(r.val);
-    dfs(r.right);
+    if (!n.left && !n.right) {
+      res = Math.max(res, l);
+    }
+    dfs(n.left, l + 1);
+    dfs(n.right, l + 1);
   };
-  dfs(root);
+  dfs(root, 1);
   return res;
 };

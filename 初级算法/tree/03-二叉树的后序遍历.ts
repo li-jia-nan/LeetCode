@@ -10,15 +10,15 @@ class TreeNode {
   }
 }
 
-export const inorderTraversal = (root: TreeNode | null): number[] => {
+export const postorderTraversal = (root: TreeNode | null): number[] => {
   const res: number[] = [];
   const dfs = (r: TreeNode | null): void => {
     if (!r) {
       return;
     }
     dfs(r.left);
-    res.push(r.val);
     dfs(r.right);
+    res.push(r.val);
   };
   dfs(root);
   return res;

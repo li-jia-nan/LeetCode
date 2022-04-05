@@ -12,19 +12,14 @@ class TreeNode {
 
 export const preorderTraversal = (root: TreeNode | null): number[] => {
   const res: number[] = [];
-  const stack: TreeNode[] = [];
-  if (root) {
-    stack.push(root);
-  }
-  while (stack.length) {
-    const n = stack.pop();
-    res.push(n.val);
-    if (n.right) {
-      stack.push(n.right);
+  const dfs = (r: TreeNode | null): void => {
+    if (!r) {
+      return;
     }
-    if (n.left) {
-      stack.push(n.left);
-    }
-  }
+    res.push(r.val);
+    dfs(r.left);
+    dfs(r.right);
+  };
+  dfs(root);
   return res;
 };
