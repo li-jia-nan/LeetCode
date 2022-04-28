@@ -1,7 +1,3 @@
 export const sortArrayByParity = (nums: number[]): number[] => {
-  const [a, b] = [[], []];
-  nums.forEach(n => {
-    ((n & 1) === 0 ? a : b).push(n);
-  });
-  return [...a, ...b];
+  return nums.sort(a => (a & 1 ? 1 : -1));
 };
