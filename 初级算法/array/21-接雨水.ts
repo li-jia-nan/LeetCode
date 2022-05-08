@@ -33,10 +33,10 @@ export const trap2 = (height: number[]): number => {
     rightMax = Math.max(rightMax, height[right]);
     if (height[left] < height[right]) {
       ans += leftMax - height[left];
-      ++left;
+      left++;
     } else {
       ans += rightMax - height[right];
-      --right;
+      right--;
     }
   }
   return ans;
