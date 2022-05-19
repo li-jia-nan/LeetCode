@@ -3,10 +3,10 @@ export const minMoves2 = (nums: number[]): number => {
     return 0;
   }
   nums.sort((a, b) => a - b);
-  const center = (nums.length / 2) >>> 0;
+  const mid = (nums.length / 2) >>> 0;
   let ans = 0;
   nums.forEach(item => {
-    ans += Math.abs(item - nums[center]);
+    ans += Math.abs(item - nums[mid]);
   });
   return ans;
 };
