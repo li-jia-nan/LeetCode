@@ -1,7 +1,4 @@
-export const binarySearch = <T extends string | number = string | number>(
-  list: T[],
-  item: T
-): number => {
+export const binarySearch = <T extends number = number>(list: T[], item: T): number => {
   let low = 0;
   let high = list.length - 1;
   while (low <= high) {
