@@ -19,7 +19,7 @@
   "homepage": "https://github.com/li-jia-nan/LeetCode#readme",
   "devDependencies": {
     "@types/node": "^17.0.35",
-    "ts-node": "^10.7.0",
+    "ts-node": "^10.8.0",
     "typescript": "^4.6.4"
   }
 }
