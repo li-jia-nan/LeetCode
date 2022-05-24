@@ -1,5 +1,5 @@
 export const isValid = (s: string): boolean => {
-  if (s.length % 2 !== 0) {
+  if (s.length & 1) {
     return false;
   }
   const stack: string[] = [];
