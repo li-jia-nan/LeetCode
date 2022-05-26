@@ -14,7 +14,7 @@ export const isValid = (s: string): boolean => {
       stack.push(c);
     } else {
       const t = stack[stack.length - 1];
-      if (map.get(t) === c) {
+      if (map.get(t) == c) {
         stack.pop();
       } else {
         return false;
