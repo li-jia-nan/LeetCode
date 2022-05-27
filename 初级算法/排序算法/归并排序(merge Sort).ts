@@ -3,7 +3,7 @@ export const mergeSort = (arr: number[]): number[] => {
     if (arr.length === 1) {
       return arr;
     }
-    const mid = Math.floor(arr.length / 2);
+    const mid = (arr.length / 2) >>> 0;
     const left = arr.slice(0, mid);
     const right = arr.slice(mid, arr.length);
     const orderLeft = rec(left);

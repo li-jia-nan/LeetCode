@@ -1,3 +1,3 @@
 export const mySqrt = (x: number): number => {
-  return Math.floor(Math.sqrt(x));
+  return Math.sqrt(x) >>> 0;
 };
