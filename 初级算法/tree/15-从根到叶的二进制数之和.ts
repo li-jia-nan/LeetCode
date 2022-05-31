@@ -1,4 +1,4 @@
-// 二叉树节点的
+// 二叉树节点的定义
 class TreeNode {
   val: number;
   left: TreeNode | null;
