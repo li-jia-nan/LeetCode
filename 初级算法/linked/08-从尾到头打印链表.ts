@@ -8,6 +8,6 @@ class ListNode {
   }
 }
 
-function reversePrint(head: ListNode | null): number[] {
+export function reversePrint(head: ListNode | null): number[] {
   return head === null ? [] : [...reversePrint(head.next), head.val];
 }
