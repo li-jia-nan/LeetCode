@@ -43,3 +43,5 @@ const convert = (arr: ArrayItem[]): TreeItem[] => {
 };
 
 console.log(convert(list));
+
+export default convert;
