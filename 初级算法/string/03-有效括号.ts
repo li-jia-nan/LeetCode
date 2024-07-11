@@ -1,4 +1,4 @@
-// map解法
+// map 解法
 export const isValid = (s: string): boolean => {
   if (s.length & 1) {
     return false;
