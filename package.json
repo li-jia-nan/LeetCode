@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/li-jia-nan/LeetCode#readme",
   "devDependencies": {
-    "@types/node": "^18.6.1",
-    "ts-node": "^10.8.0",
-    "typescript": "^5.1.3"
+    "@types/node": "^18.19.39",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
   }
 }
